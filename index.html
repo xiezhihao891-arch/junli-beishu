@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f5f45" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1512" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="军理背诵">
+<meta name="description" content="军事理论背诵专页 · 卡片 / 时间轴 / 挖空 / 提纲 · 10月17日考试">
+<meta name="format-detection" content="telephone=no">
+<title>军理背诵 · 备考默写</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <main id="view" class="view"></main>
+  <nav id="tabbar" class="tabbar" aria-label="主导航">
+    <a href="#/today" data-tab="today"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="4"/></svg><span>今日</span></a>
+    <a href="#/cards" data-tab="cards"><svg viewBox="0 0 24 24"><path d="M7 3h11a2 2 0 0 1 2 2v12M4 7h11a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg><span>背诵卡</span></a>
+    <a href="#/timeline" data-tab="timeline"><svg viewBox="0 0 24 24"><path d="M12 7v5l3 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/></svg><span>时间轴</span></a>
+    <a href="#/cloze" data-tab="cloze"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h14M16 12h4"/></svg><span>挖空</span></a>
+    <a href="#/outline" data-tab="outline"><svg viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg><span>提纲</span></a>
+  </nav>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</div>
+<noscript>本站需要启用 JavaScript。</noscript>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
